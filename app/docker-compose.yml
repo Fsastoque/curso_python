@@ -1,0 +1,7 @@
+services: #"Crear un servicio"
+  app-csv:   #"nombre del servicio"
+    build:   #"construir" 
+      context: . #"Desde la carpeta donde estoy ubicado"
+      dockerfile: Dockerfile   #"buscar el archivo dockerfile"
+    volumes: #Enlazar sistema de archivos con el contenedor
+      - .:/app

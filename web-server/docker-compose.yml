@@ -1,0 +1,9 @@
+services: #"Crear un servicio"
+  web-server:   #"nombre del servicio"
+    build:   #"construir" 
+      context: . #"Desde la carpeta donde estoy ubicado"
+      dockerfile: Dockerfile   #"buscar el archivo dockerfile"
+    volumes: #Enlazar sistema de archivos con el contenedor
+      - .:/app
+    ports:
+      - '80:80'
