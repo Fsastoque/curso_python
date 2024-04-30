@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 def generate_bar_chart(labels, values):      
     fig, ax = plt.subplots()
-    ax.bar(labels, values)
+    ax.bar(labels, values)  
     plt.show()
 
 def generate_pie_chart(labels, values):      
@@ -11,9 +11,9 @@ def generate_pie_chart(labels, values):
     ax.axis('equal')
     plt.show()
 
-if __name__ == '__main__':
+'''if __name__ == '__main__':
     labels = ['abril','mayo','junio']
     values = [100, 500, 80] 
-    #generate_bar_chart(labels, values)
-    generate_pie_chart(labels, values)
+    generate_bar_chart(labels, values)
+    generate_pie_chart(labels, values)'''
 
