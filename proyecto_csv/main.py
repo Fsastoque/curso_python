@@ -8,6 +8,7 @@ def run():
   
     if len(result) > 0:
         labels, values = utils.get_population_percentage(result)
+        utils.generate_country_porcentage(result)
         utils.generate_pie_chart(labels, values)    
         
 

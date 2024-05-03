@@ -14,3 +14,9 @@ def generate_pie_chart(labels, values):
     ax.pie(values, labels=labels)
     ax.axis('equal')
     plt.show()
+
+#Solucion curso
+def generate_country_porcentage(data):
+    labels = list(map(lambda country : country['Country/Territory'],data))
+    values = list(map(lambda country : country['World Population Percentage'],data))
+    print(labels, values)
